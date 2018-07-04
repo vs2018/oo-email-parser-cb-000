@@ -13,7 +13,9 @@ class EmailParser
   
   def parse
     email_array = @emails.split(",")
-    
+    email_array.map do |email|
+      email.strip()
+    end
     
   end
 end
